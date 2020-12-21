@@ -47,7 +47,7 @@ class MingYanSpider(scrapy.Spider):
         ("http://www.17989.com/mingyan/zhanzheng/{}.htm", "战争名言", 8),
         ("http://www.17989.com/mingyan/guyu/{}.htm", "古语名言", 33),
     ]
-    file_obj = open(xiaohua_path, "w")
+    file_obj = open(xiaohua_path, "a")
 
     def start_requests(self):
         for itm in self.class_num:

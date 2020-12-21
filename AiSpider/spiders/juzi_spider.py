@@ -7,7 +7,7 @@ import scrapy
 import json
 
 
-class XiaoHuaSpider(scrapy.Spider):
+class JuziSpider(scrapy.Spider):
     name = "juzi_spider"
     xiaohua_path = "./data/juzi__from_17989.txt"
 
@@ -46,7 +46,7 @@ class XiaoHuaSpider(scrapy.Spider):
         ("http://www.17989.com/juzi/xianshi/{}.htm", "现实", 34),
         ("http://www.17989.com/juzi/ganren/{}.htm", "感人", 31),
     ]
-    file_obj = open(xiaohua_path, "w")
+    file_obj = open(xiaohua_path, "a")
 
     def start_requests(self):
         for itm in self.class_num:

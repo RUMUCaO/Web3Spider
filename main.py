@@ -6,10 +6,10 @@
 
 from scrapy import cmdline
 
-# cmdline.execute("scrapy crawl xiaohua_spider".split())
-
 # cmdline.execute("scrapy crawl juzi_spider".split())
-cmdline.execute("scrapy crawl mingyan_spider".split())
+# cmdline.execute("scrapy crawl mingyan_spider".split())
 # cmdline.execute("scrapy crawl yulu_spider".split())
+
+# cmdline.execute("scrapy crawl xiaohua_spider".split())
 
 # cmdline.execute("scrapy crawl gaoxiao_tupian_spider".split())

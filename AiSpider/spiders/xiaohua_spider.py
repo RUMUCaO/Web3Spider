@@ -30,7 +30,7 @@ class XiaoHuaSpider(scrapy.Spider):
         ("http://www.17989.com/xiaohua/jingdian/{}.htm", "经典笑话", 207),
         ("http://www.17989.com/xiaohua/duanxiaohua/{}.htm", "短笑话", 154),
     ]
-    file_obj = open(xiaohua_path, "w")
+    file_obj = open(xiaohua_path, "a")
 
     def start_requests(self):
         for itm in self.class_num:
@@ -54,3 +54,4 @@ class XiaoHuaSpider(scrapy.Spider):
                 "label": label
             }
             self.file_obj.write(json.dumps(item, ensure_ascii=False) + "\n")
+
