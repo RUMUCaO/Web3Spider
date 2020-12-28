@@ -13,7 +13,7 @@ class DongtuSpider(scrapy.Spider):
     name = "gaoxiao_dongtu_spider"
 
     class_num = [
-        ("http://www.17989.com/dongtaitu/", "gif", 1392)
+        ("http://www.17989.com/dongtaitu/{}.htm", "gif", 1392)
     ]
     img_path = "./data/gifs/"
 
