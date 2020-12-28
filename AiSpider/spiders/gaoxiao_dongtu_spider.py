@@ -9,14 +9,13 @@ import os
 from urllib.request import urlretrieve
 
 
-class XiaoHuaSpider(scrapy.Spider):
-    name = "gaoxiao_tupian_spider"
+class DongtuSpider(scrapy.Spider):
+    name = "gaoxiao_dongtu_spider"
 
     class_num = [
-        ("http://www.17989.com/tupian/{}.htm", "jpg", 986),
-        # ("http://www.17989.com/dongtaitu/", "gif", 1392)
+        ("http://www.17989.com/dongtaitu/", "gif", 1392)
     ]
-    img_path = "./data/imgs/"
+    img_path = "./data/gifs/"
 
     def start_requests(self):
         for itm in self.class_num:
