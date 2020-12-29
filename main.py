@@ -14,3 +14,6 @@ from scrapy import cmdline
 
 # cmdline.execute("scrapy crawl gaoxiao_tupian_spider".split())
 # cmdline.execute("scrapy crawl gaoxiao_dongtu_spider".split())
+
+# cmdline.execute("scrapy crawl chenyu_spider".split())
+
