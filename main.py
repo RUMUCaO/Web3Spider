@@ -17,3 +17,5 @@ from scrapy import cmdline
 
 # cmdline.execute("scrapy crawl chenyu_spider".split())
 
+cmdline.execute("scrapy crawl today_in_history_spider".split())
+
